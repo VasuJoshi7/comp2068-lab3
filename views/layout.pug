@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js')
+  script(src="/javascripts/custom.js")
+  body
+  nav.navbar.navbar-default
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href='/index') LAB2 Demo
+      ul.nav.navbar-nav
+        li.nav-item.active
+          a(href='/index') Home
+        li.nav-item
+          a(href='/marilyn') Marilyn
+        li.nav-item
+          a(href='/abraham') Abraham L
+        li.nav-item
+          a(href='/MotherTeresa') Mother Teresa
+        li.nav-item
+          a(href='/billgate') Bill Gates
+      //- li
+      //-   a(href='#') Shubham
+  .container
+    block content
+
+  
+    
+
